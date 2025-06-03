@@ -1,0 +1,98 @@
+/* App.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2b2e4a;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.file-input {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.submit-button {
+  background-color: #4c6ef5;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #3b5bdb;
+}
+
+.error-text {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.result-box {
+  margin-top: 40px;
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 5px solid #4c6ef5;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.result-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #343a40;
+}
+
+.result-content {
+  white-space: pre-wrap;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-in-out;
+}
